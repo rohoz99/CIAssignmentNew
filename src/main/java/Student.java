@@ -20,8 +20,8 @@ public class Student {
     DateTime dateOfBirth;
     int studentId;
     String userName;
-    ArrayList<String> studentCourses = new ArrayList<String>();
-    ArrayList<String> studentMods = new ArrayList<String>();
+   ArrayList<String> studentCourses = new ArrayList<String>();
+   ArrayList<String> studentMods = new ArrayList<String>();
 
     public Student(String name,int age, DateTime dob, int id){
         studentName = name;
