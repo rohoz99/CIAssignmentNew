@@ -20,7 +20,7 @@ public class CourseTest
 {
 
 private Course courseTest;
-private String courseTestName = "Games Programming";
+private String courseTestName = "Computer Science";
 
 private DateTime testStartDate = new DateTime(2021,8,15,10,30);
 
@@ -57,6 +57,12 @@ courseTest.setStudents(studentTest);
 assertTrue(courseTest.getModules().contains(modTest));
 
 
+}
+
+@Test
+public void testStudentList() {
+
+    assertTrue(courseTest.getStudents().contains(studentTest));
 }
 
 @Test

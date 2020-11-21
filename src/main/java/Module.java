@@ -13,13 +13,13 @@ import java.util.ArrayList;
  */
 public class Module {
     String modName;
-    int modId;
-    ArrayList<String> listOfStudents = new ArrayList<String>();
-    ArrayList<String> listOfCourses = new ArrayList<String>();
+    String modId;
+    ArrayList<Student> listOfStudents = new ArrayList<Student>();
+    ArrayList<Course> listOfCourses = new ArrayList<Course>();
 
-    public Module(String moduleName, int idNum){
-        moduleName = modName;
-        idNum = modId;
+    public Module(String modName, String modId){
+        this.modName =modName;
+        this.modId = modId;
     }
 
     public String getModName() {
@@ -31,26 +31,26 @@ public class Module {
 
     }
 
-    public int getModId(){
+    public String getModId(){
         return modId;
     }
 
-    public void setModId(int modId){
+    public void setModId(String modId){
         this.modId = modId;
     }
 
-    public ArrayList<String> getListOfStudents(){
+    public ArrayList<Student> getListOfStudents(){
         return listOfStudents;
     }
-    public void setStudentList(String listOfStudents){
+    public void setStudentList(Student listOfStudents){
         this.listOfStudents.add(listOfStudents);
     }
 
-    public ArrayList<String> getListOfCourses(){
+    public ArrayList<Course> getListOfCourses(){
         return listOfCourses;
     }
 
-    public void setCourseList(String listOfCourses){
+    public void setCourseList(Course listOfCourses){
         this.listOfCourses.add(listOfCourses);
     }
 
