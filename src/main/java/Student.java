@@ -21,14 +21,14 @@ public class Student {
     DateTime dateOfBirth;
     int studentId;
     String userName;
-   ArrayList<String> studentCourses = new ArrayList<String>();
-   ArrayList<String> studentMods = new ArrayList<String>();
+   ArrayList<Course> studentCourses = new ArrayList<Course>();
+   ArrayList<Module> studentMods = new ArrayList<Module>();
 
-    public Student(String name,int age, DateTime dob, int id){
-        studentName = name;
-        studentAge = age;
-        dateOfBirth = dob;
-        studentId = id;
+    public Student(String studentName,int studentAge, DateTime dateOfBirth, int studentId){
+        this.studentName = studentName;
+        this.studentAge = studentAge;
+        this.dateOfBirth = dateOfBirth;
+        this.studentId = studentId;
     }
 
     public String getStudentName(){
@@ -64,21 +64,21 @@ public class Student {
         this.studentId = studentId;
     }
 
-    public ArrayList<String> getStudentCourses() {
+    public ArrayList<Course> getStudentCourses() {
         return studentCourses;
     }
 
-    public void setStudentCourses(String studentCourses){
+        public void setStudentCourses(Course studentCourses){
         this.studentCourses.add(studentCourses);
     }
 
 
 
-    public ArrayList<String> getStudentMods(){
+    public ArrayList<Module> getStudentMods(){
         return studentMods;
     }
 
-    public void setStudentMods(String studentMods){
+    public void setStudentMods(Module studentMods){
         this.studentMods.add(studentMods);
     }
 
