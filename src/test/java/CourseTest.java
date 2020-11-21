@@ -71,6 +71,4 @@ assertTrue(courseTest.getModules().contains(modTest));
 
 
 
-
-
 }

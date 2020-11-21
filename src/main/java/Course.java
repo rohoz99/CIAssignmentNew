@@ -19,11 +19,11 @@ public class Course {
     DateTime startDate;
     DateTime endDate;
 
-    public Course(String course, DateTime start,DateTime end)
+    public Course(String courseName, DateTime startDate,DateTime endDate)
     {
-        course= courseName;
-        start = startDate;
-        end = endDate;
+        this.courseName = courseName;
+        this.startDate = startDate;
+        this.endDate =endDate;
     }
 
 
