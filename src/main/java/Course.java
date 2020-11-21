@@ -14,8 +14,8 @@ import java.util.ArrayList;
  */
 public class Course {
     String courseName;
-    ArrayList<String> modules = new ArrayList<String>();
-    ArrayList<String> students = new ArrayList<String>();
+    ArrayList<Module> modules = new ArrayList<Module>();
+    ArrayList<Student> students = new ArrayList<Student>();
     DateTime startDate;
     DateTime endDate;
 
@@ -27,23 +27,23 @@ public class Course {
     }
 
 
-    public ArrayList<String> getModules(){
+    public ArrayList<Module> getModules(){
 
         return modules;
     }
 
-    public void setModules(String modules){
+    public void setModules(Module modules){
 
         this.modules.add(modules);
     }
 
 
-    public ArrayList<String> getStudents(){
+    public ArrayList<Student> getStudents(){
 
         return students;
     }
 
-    public void setStudents(String students){
+    public void setStudents(Student students){
 
         this.students.add(students);
     }
