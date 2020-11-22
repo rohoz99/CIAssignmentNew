@@ -64,7 +64,7 @@ public class Student {
         this.studentId = studentId;
     }
 
-    public ArrayList<Course> getStudentCourses() {
+    public ArrayList<Course> getStudentCourses() { // ArrayList type Course in order to return instances of Course
         return studentCourses;
     }
 
@@ -74,7 +74,7 @@ public class Student {
 
 
 
-    public ArrayList<Module> getStudentMods(){
+    public ArrayList<Module> getStudentMods(){ // ArrayList type Module in order to return instances of Module
         return studentMods;
     }
 
@@ -82,9 +82,11 @@ public class Student {
         this.studentMods.add(studentMods);
     }
 
-    public String getStudentUsername(){
+    public String getStudentUsername(){ // The username of the student is created by concatinating the Student's name and Age
         this.userName = getStudentName().concat(String.valueOf(getStudentAge()));
         return userName;
     }
+
+
 
 }

@@ -42,7 +42,7 @@ public class Module {
     public ArrayList<Student> getListOfStudents(){
         return listOfStudents;
     }
-    public void setStudentList(Student listOfStudents){
+    public void setStudentList(Student listOfStudents){ // Adding the assosciated list of students to this module
         this.listOfStudents.add(listOfStudents);
     }
 
@@ -50,7 +50,7 @@ public class Module {
         return listOfCourses;
     }
 
-    public void setCourseList(Course listOfCourses){
+    public void setCourseList(Course listOfCourses){ // Adding the assosciated courses to this module
         this.listOfCourses.add(listOfCourses);
     }
 

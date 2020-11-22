@@ -27,7 +27,7 @@ public class StudentTest {
 
    @Before
     public void init(){
-
+// Initialising the Student instance
        studentTest = new Student(studentNameTest,studentAgeTest,DOBTest,studentIdTest);
        studentTest.setStudentCourses(courseTest);
        studentTest.setStudentMods(modTest);
@@ -36,46 +36,46 @@ public class StudentTest {
    }
 
    @Test
-    public void testStudentName(){
+    public void testStudentName(){ //Testing the getStudentName() method
 
        assertEquals(studentTest.getStudentName(),studentNameTest);
 
    }
 
    @Test
-   public void testStudentAge(){
+   public void testStudentAge(){ // Testing the getStudentAge() method
 
        assertEquals(studentTest.getStudentAge(),studentAgeTest);
    }
 
    @Test
-    public void testStudentDOB() {
+    public void testStudentDOB() { // Testing the getDOB() method
 
        assertEquals(studentTest.getDOB(),DOBTest);
    }
 
    @Test
-    public void testStudentId() {
+    public void testStudentId() { // Testing the getStudent() method
 
        assertEquals(studentTest.getStudentID(),studentIdTest);
 
    }
 
    @Test
-    public void getCoursesTest(){
+    public void getCoursesTest(){ // Testing the getStudentCourses() method
 
        assertTrue(studentTest.getStudentCourses().contains(courseTest));
    }
 
 
    @Test
-    public void getModulesTest(){
+    public void getModulesTest(){ // Testing the getStudentMods() method
 
        assertTrue(studentTest.getStudentMods().contains(modTest));
    }
 
    @Test
-    public void getStudentUserNameTest(){
+    public void getStudentUserNameTest(){ // Testing the getStudentUsername() method
 
        assertEquals(studentTest.getStudentUsername(),userNameTest);
    }

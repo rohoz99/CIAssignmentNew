@@ -26,7 +26,7 @@ public class ModuleTest {
 
     @Before
     public void init(){
-
+// Initialising instance of Module
         modTest = new Module(modNameTest,modIdTest);
         modTest.setCourseList(courseTest);
         modTest.setStudentList(studentTest);
@@ -34,14 +34,14 @@ public class ModuleTest {
     }
 
     @Test
-    public void modNameTest(){
+    public void modNameTest(){ // Testing the getModName method
 
         assertEquals(modTest.getModName(),modNameTest);
 
     }
 
     @Test
-    public void getCourseListTest() {
+    public void getCourseListTest() { // Testing the getCourseList method
 
         assertTrue(modTest.getListOfCourses().contains(courseTest));
 
@@ -50,7 +50,7 @@ public class ModuleTest {
 
 
     @Test
-    public void modIdTest()
+    public void modIdTest() // Testing the getModId() method
     {
 
         assertEquals(modTest.getModId(),modIdTest);
@@ -59,7 +59,7 @@ public class ModuleTest {
 
 
     @Test
-    public void getStudentListTest() {
+    public void getStudentListTest() { // Testing the getListOfStudents() method
 
         assertTrue(modTest.getListOfStudents().contains(studentTest));
     }
